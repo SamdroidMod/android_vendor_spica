@@ -1,0 +1,11 @@
+#
+# system.prop for spica
+#
+
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/ttyS0
+
+keyguard.no_require_sim=true
+
+ro.media.dec.aud.wma.enabled=1
+ro.media.dec.vid.wmv.enabled=1
