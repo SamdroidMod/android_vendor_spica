@@ -41,10 +41,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
         device/common/gps/gps.conf_AS_SUPL:system/etc/gps.conf
 
-# GSM APN list
-PRODUCT_COPY_FILES += \
-    vendor/leshak/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
@@ -114,4 +110,18 @@ PRODUCT_COPY_FILES += \
 #
 PRODUCT_COPY_FILES += \
     vendor/leshak/prebuilt/spica/vold/vold.fstab:system/etc/vold.fstab
+
+#
+# RIL
+#
+PRODUCT_COPY_FILES += \
+    vendor/leshak/prebuilt/spica/ril/drexe:system/bin/drexe \
+    vendor/leshak/prebuilt/spica/ril/efsd:system/bin/efsd \
+    vendor/leshak/prebuilt/spica/ril/rilclient-test:system/bin/rilclient-test \
+    vendor/leshak/prebuilt/spica/ril/libsec-ril.so:system/lib/libsec-ril.so \
+    vendor/leshak/prebuilt/spica/ril/libsecril-client.so:system/lib/libsecril-client.so
+
+# GSM APN list
+PRODUCT_COPY_FILES += \
+    vendor/leshak/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
 

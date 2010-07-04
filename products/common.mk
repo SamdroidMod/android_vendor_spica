@@ -45,6 +45,8 @@ PRODUCT_COPY_FILES += \
     vendor/leshak/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/leshak/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
+SPICA_WITH_GOOGLE:=true
+
 ifdef SPICA_WITH_GOOGLE
     PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=false
 
