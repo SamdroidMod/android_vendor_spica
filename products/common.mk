@@ -6,9 +6,6 @@ PRODUCT_DEVICE := generic
 # Use edify for otapackage
 PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=edify
 
-# Include backuptool
-PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=true
-
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/lib/modules
 
@@ -45,10 +42,9 @@ PRODUCT_COPY_FILES += \
     vendor/leshak/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/leshak/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
-SPICA_WITH_GOOGLE:=true
+#SPICA_WITH_GOOGLE:=true
 
 ifdef SPICA_WITH_GOOGLE
-    PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_BACKUPTOOL=false
 
     PRODUCT_COPY_FILES += \
         vendor/leshak/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
