@@ -24,6 +24,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
+PRODUCT_PACKAGES += \
+    Superuser
+
 # Bring in some audio files
 include frameworks/base/data/sounds/AudioPackage4.mk
 
