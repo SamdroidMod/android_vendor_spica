@@ -1,6 +1,5 @@
 # Inherit AOSP device configuration for passion.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_small.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk.mk)
 
 # Inherit some common cyanogenmod stuff.
 $(call inherit-product, vendor/leshak/products/common.mk)
@@ -12,22 +11,14 @@ PRODUCT_NAME := leshak_spica
 PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := GT-I5700
 PRODUCT_MODEL := GT-I5700
-PRODUCT_MANUFACTURER := SAMSUNG
+PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=Froyo BUILD_DISPLAY_ID=Froyo PRODUCT_NAME=spica BUILD_FINGERPRINT=/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys
 PRIVATE_BUILD_DESC="spica-user 2.2 FRF91 43546 release-keys"
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/leshak/prelink-linux-arm-spica.map
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=SamdroidMod-2-$(shell date +%m%d%Y)-NIGHTLY-Spica
-else
-    PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
         ro.modversion=SamdroidMod-2.0.0-Spica-test0
-endif
 
 # Time between scans in seconds. Keep it high to minimize battery drain.
 # This only affects the case in which there are remembered access points,
@@ -40,17 +31,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160
 
-PRODUCT_COPY_FILES += \
-        device/common/gps/gps.conf_AS_SUPL:system/etc/gps.conf
-
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \
-    frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/base/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
-    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
-    frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-    frameworks/base/data/etc/android.hardware.touchscreen.xml:system/etc/permissions/android.hardware.touchscreen.xml 
+    frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
 #
 # Copy spica specific prebuilt files

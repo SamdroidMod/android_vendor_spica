@@ -4,7 +4,7 @@ PRODUCT_BRAND := leshak
 PRODUCT_DEVICE := generic
 
 # Use edify for otapackage
-PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=edify
+PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=amend
 
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/lib/modules
@@ -23,9 +23,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
-
-PRODUCT_PACKAGES += \
-    Superuser
 
 # Bring in some audio files
 include frameworks/base/data/sounds/AudioPackage4.mk
