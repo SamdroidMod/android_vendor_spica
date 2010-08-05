@@ -4,7 +4,7 @@ PRODUCT_BRAND := leshak
 PRODUCT_DEVICE := generic
 
 # Use edify for otapackage
-PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=edify
+PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=amend
 
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/lib/modules
