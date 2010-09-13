@@ -4,7 +4,7 @@ LOCAL_PATH := $(call my-dir)
 #
 # no boot loader, so we don't need any of that stuff..  
 #
-LOCAL_PATH := vendor/leshak/GT-I5700
+LOCAL_PATH := vendor/spica/GT-I5700
 #
 include $(CLEAR_VARS)
 #
