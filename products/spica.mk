@@ -123,7 +123,15 @@ PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/spica/ril/libsec-ril.so:system/lib/libsec-ril.so \
     vendor/spica/prebuilt/spica/ril/libsecril-client.so:system/lib/libsecril-client.so
 
+#
 # GSM APN list
+#
 PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+#
+# Audio
+#
+PRODUCT_COPY_FILES += \
+    vendor/spica/prebuilt/spica/audio/asound.conf:system/etc/asound.conf
 
