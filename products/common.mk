@@ -69,7 +69,6 @@ ifdef SPICA_WITH_GOOGLE
         vendor/spica/proprietary/HtcEmailPolicy.apk:./system/app/HtcEmailPolicy.apk \
         vendor/spica/proprietary/HtcSettings.apk:./system/app/HtcSettings.apk \
         vendor/spica/proprietary/kickback.apk:./system/app/kickback.apk \
-        vendor/spica/proprietary/LatinImeGoogle.apk:./system/app/LatinImeGoogle.apk \
         vendor/spica/proprietary/LatinImeTutorial.apk:./system/app/LatinImeTutorial.apk \
         vendor/spica/proprietary/MarketUpdater.apk:./system/app/MarketUpdater.apk \
         vendor/spica/proprietary/MediaUploader.apk:./system/app/MediaUploader.apk \
