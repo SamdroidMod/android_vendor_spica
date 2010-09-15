@@ -93,8 +93,8 @@ static int s_device_close(hw_device_t* device)
 static const int DEFAULT_SAMPLE_RATE = ALSA_DEFAULT_SAMPLE_RATE;
 
 static const char *devicePrefix[SND_PCM_STREAM_LAST + 1] = {
-        /* SND_PCM_STREAM_PLAYBACK : */"AndroidPlayback",
-        /* SND_PCM_STREAM_CAPTURE  : */"AndroidCapture",
+        /* SND_PCM_STREAM_PLAYBACK : */"AndroidOut",
+        /* SND_PCM_STREAM_CAPTURE  : */"AndroidIn",
 };
 
 static alsa_handle_t _defaultsOut = {
