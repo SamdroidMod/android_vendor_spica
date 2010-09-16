@@ -15,8 +15,8 @@ key 226    SEARCH        WAKE
 key 227    HOME        WAKE
 key 228    CAMERA
 
-key 249   ENDCALL           WAKE_DROPPED
-key 251   HOLD
+key 249   ENDCALL
+key 251   POWER          WAKE_DROPPED
 
 # Fake Focus
 key 250   FOCUS
