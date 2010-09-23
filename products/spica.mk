@@ -120,8 +120,7 @@ PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/spica/ril/drexe:system/bin/drexe \
     vendor/spica/prebuilt/spica/ril/efsd:system/bin/efsd \
     vendor/spica/prebuilt/spica/ril/rilclient-test:system/bin/rilclient-test \
-    vendor/spica/prebuilt/spica/ril/libsec-ril.so:system/lib/libsec-ril.so \
-    vendor/spica/prebuilt/spica/ril/libsecril-client.so:system/lib/libsecril-client.so
+    vendor/spica/prebuilt/spica/ril/libsec-ril.so:system/lib/libsec-ril.so
 
 #
 # GSM APN list
