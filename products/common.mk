@@ -86,9 +86,9 @@ ifdef SPICA_WITH_GOOGLE
         vendor/spica/proprietary/YouTube.apk:./system/app/YouTube.apk \
         vendor/spica/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
         vendor/spica/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
-	vendor/spica/proprietary/features.xml:./system/etc/permissions/features.xml \
-        vendor/spica/proprietary/libinterstitial.so:./system/lib/libinterstitial.so \
-        vendor/spica/proprietary/libspeech.so:./system/lib/libspeech.so
+        vendor/spica/proprietary/features.xml:./system/etc/permissions/features.xml \
+        vendor/spica/proprietary/libspeech.so:./system/lib/libspeech.so \
+        vendor/spica/proprietary/libvoicesearch.so:./system/lib/libvoicesearch.so
 else
     PRODUCT_PACKAGES += \
         Provision \
