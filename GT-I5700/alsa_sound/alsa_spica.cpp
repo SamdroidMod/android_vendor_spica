@@ -143,7 +143,6 @@ static const device_suffix_t deviceSuffix[] = {
     {AudioSystem::DEVICE_OUT_BLUETOOTH_A2DP,            "_Bluetooth-A2DP"},
     {AudioSystem::DEVICE_OUT_BLUETOOTH_A2DP_HEADPHONES, "_Bluetooth-A2DP-Headphone"},
     {AudioSystem::DEVICE_OUT_BLUETOOTH_A2DP_SPEAKER,    "_Bluetooth-A2DP-Speaker"},
-    {AudioSystem::DEVICE_OUT_FM,                        "_FM"},
     //recording devices:
     {AudioSystem::DEVICE_IN_BLUETOOTH_SCO_HEADSET,      "_Bluetooth"},
     {AudioSystem::DEVICE_IN_WIRED_HEADSET,              "_Headset"},
