@@ -43,6 +43,7 @@ PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/common/xbin/lsof:system/xbin/lsof \
     vendor/spica/prebuilt/common/xbin/nano:system/xbin/nano \
     vendor/spica/prebuilt/common/xbin/powertop:system/xbin/powertop \
+    vendor/spica/prebuilt/common/xbin/remount:system/xbin/remount \
     vendor/spica/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
 #SPICA_WITH_GOOGLE:=true

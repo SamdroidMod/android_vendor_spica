@@ -1,0 +1,9 @@
+#!/system/bin/sh
+    case $1 in
+        ro )
+			mount -o remount,ro,codepage=utf8,vfat,fcache\(blks\)=128,xattr,check=no /dev/stl6 /system;;			
+        rw )
+			mount -o remount,rw,codepage=utf8,vfat,fcache\(blks\)=128,xattr,check=no /dev/stl6 /system;;
+        * )
+            echo "Usage: $0 ro|rw";;
+    esac
