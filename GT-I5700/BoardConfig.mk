@@ -30,3 +30,8 @@ WIFI_DRIVER_MODULE_NAME     := "dhd"
 BOARD_GPS_LIBRARIES := libsecgps libsecril-client
 
 BOARD_HAVE_BLUETOOTH := false
+
+#
+# vflashbird's camcoder fix
+#
+BUILD_PV_VIDEO_ENCODERS := 1
