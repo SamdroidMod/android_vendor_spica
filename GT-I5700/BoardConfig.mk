@@ -29,7 +29,12 @@ WIFI_DRIVER_MODULE_NAME     := "dhd"
 
 BOARD_GPS_LIBRARIES := libsecgps libsecril-client
 
-BOARD_HAVE_BLUETOOTH := false
+BOARD_HAVE_BLUETOOTH        := true
+BOARD_HAVE_BLUETOOTH_BCM    := true
+BT_USE_BTL_IF               := true
+BT_ALT_STACK                := true
+BRCM_BTL_INCLUDE_A2DP       := true
+BRCM_BT_USE_BTL_IF          := true
 
 #
 # vflashbird's camcoder fix
