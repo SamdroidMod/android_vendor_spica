@@ -25,6 +25,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 PRODUCT_PACKAGES += \
+    FileManager \
     Superuser
 
 # Bring in some audio files
