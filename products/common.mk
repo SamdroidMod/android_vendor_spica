@@ -52,8 +52,6 @@ ifdef SPICA_WITH_GOOGLE
     PRODUCT_COPY_FILES += \
         vendor/spica/proprietary/CarHomeGoogle.apk:./system/app/CarHomeGoogle.apk \
         vendor/spica/proprietary/CarHomeLauncher.apk:./system/app/CarHomeLauncher.apk \
-        vendor/spica/proprietary/com.amazon.mp3.apk:./system/app/com.amazon.mp3.apk \
-        vendor/spica/proprietary/Maps.apk:./system/app/Maps.apk \
         vendor/spica/proprietary/Facebook.apk:./system/app/Facebook.apk \
         vendor/spica/proprietary/GenieWidget.apk:./system/app/GenieWidget.apk \
         vendor/spica/proprietary/Gmail.apk:./system/app/Gmail.apk \
@@ -64,31 +62,31 @@ ifdef SPICA_WITH_GOOGLE
         vendor/spica/proprietary/GooglePartnerSetup.apk:./system/app/GooglePartnerSetup.apk \
         vendor/spica/proprietary/GoogleQuickSearchBox.apk:./system/app/GoogleQuickSearchBox.apk \
         vendor/spica/proprietary/GoogleServicesFramework.apk:./system/app/GoogleServicesFramework.apk \
-        vendor/spica/proprietary/googlevoice.apk:./system/app/googlevoice.apk \
         vendor/spica/proprietary/HtcCopyright.apk:./system/app/HtcCopyright.apk \
         vendor/spica/proprietary/HtcEmailPolicy.apk:./system/app/HtcEmailPolicy.apk \
         vendor/spica/proprietary/HtcSettings.apk:./system/app/HtcSettings.apk \
-        vendor/spica/proprietary/kickback.apk:./system/app/kickback.apk \
         vendor/spica/proprietary/LatinImeTutorial.apk:./system/app/LatinImeTutorial.apk \
+        vendor/spica/proprietary/Maps.apk:./system/app/Maps.apk \
         vendor/spica/proprietary/MarketUpdater.apk:./system/app/MarketUpdater.apk \
         vendor/spica/proprietary/MediaUploader.apk:./system/app/MediaUploader.apk \
         vendor/spica/proprietary/NetworkLocation.apk:./system/app/NetworkLocation.apk \
         vendor/spica/proprietary/OneTimeInitializer.apk:./system/app/OneTimeInitializer.apk \
         vendor/spica/proprietary/PassionQuickOffice.apk:./system/app/PassionQuickOffice.apk \
         vendor/spica/proprietary/SetupWizard.apk:./system/app/SetupWizard.apk \
-        vendor/spica/proprietary/soundback.apk:./system/app/soundback.apk \
         vendor/spica/proprietary/Street.apk:./system/app/Street.apk \
         vendor/spica/proprietary/Talk.apk:./system/app/Talk.apk \
-        vendor/spica/proprietary/talkback.apk:./system/app/talkback.apk \
         vendor/spica/proprietary/Twitter.apk:./system/app/Twitter.apk \
         vendor/spica/proprietary/Vending.apk:./system/app/Vending.apk \
         vendor/spica/proprietary/VoiceSearch.apk:./system/app/VoiceSearch.apk \
         vendor/spica/proprietary/YouTube.apk:./system/app/YouTube.apk \
+        vendor/spica/proprietary/googlevoice.apk:./system/app/googlevoice.apk \
+        vendor/spica/proprietary/kickback.apk:./system/app/kickback.apk \
+        vendor/spica/proprietary/soundback.apk:./system/app/soundback.apk \
+        vendor/spica/proprietary/talkback.apk:./system/app/talkback.apk \
         vendor/spica/proprietary/com.google.android.maps.xml:./system/etc/permissions/com.google.android.maps.xml \
-        vendor/spica/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
         vendor/spica/proprietary/features.xml:./system/etc/permissions/features.xml \
-        vendor/spica/proprietary/libspeech.so:./system/lib/libspeech.so \
-        vendor/spica/proprietary/libvoicesearch.so:./system/lib/libvoicesearch.so
+        vendor/spica/proprietary/com.google.android.maps.jar:./system/framework/com.google.android.maps.jar \
+        vendor/spica/proprietary/libspeech.so:./system/lib/libspeech.so
 else
     PRODUCT_PACKAGES += \
         Provision \
