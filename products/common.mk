@@ -9,6 +9,9 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_OTA_SCRIPT_MODE=amend
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/lib/modules
 
+# Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/spica/overlay/common
+
 # Tiny toolbox
 TINY_TOOLBOX:=true
 
