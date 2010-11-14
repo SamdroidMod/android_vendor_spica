@@ -29,7 +29,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     FileManager \
-    Superuser
+    Superuser \
+    AdwLauncher
 
 # Bring in some audio files
 include frameworks/base/data/sounds/AudioPackage4.mk
