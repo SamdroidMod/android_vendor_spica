@@ -30,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     FileManager \
     Superuser \
-    AdwLauncher
+    ADWLauncher
 
 # Bring in some audio files
 include frameworks/base/data/sounds/AudioPackage4.mk
