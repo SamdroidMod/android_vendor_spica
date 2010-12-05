@@ -15,7 +15,6 @@ class BMA020 : public ChipReader {
     /* Open file descriptors */
     int fd;
 
-    Calibrator accelerometer;
     Vector accelerometer_g;
 
     struct timeval next_update;
