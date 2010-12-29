@@ -1,7 +1,6 @@
 #
 # system.prop for spica
 #
-dalvik.vm.startheapsize=8m
 
 rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/ttyS0

@@ -13,8 +13,8 @@ PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := GT-I5700
 PRODUCT_MODEL := GT-I5700
 PRODUCT_MANUFACTURER := SAMSUNG
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=Froyo BUILD_DISPLAY_ID=Froyo PRODUCT_NAME=spica BUILD_FINGERPRINT=/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys
-PRIVATE_BUILD_DESC="spica-user 2.2 FRF91 43546 release-keys"
+#PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=Froyo BUILD_DISPLAY_ID=Froyo PRODUCT_NAME=spica BUILD_FINGERPRINT=/passion/passion/mahimahi:2.2/FRF91/43546:user/release-keys TARGET_BUILD_TYPE=userdebug BUILD_VERSION_TAGS=release-keys
+#PRIVATE_BUILD_DESC="spica-user 2.2 FRF91 43546 release-keys"
 
 PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/spica/prelink-linux-arm-spica.map
 
@@ -23,10 +23,10 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/spica/prelink-lin
 #
 ifdef SAMDROID_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=SamdroidMod-2-$(shell date +%m%d%Y)-NIGHTLY-Spica
+        ro.modversion=SamdroidMod-3-$(shell date +%m%d%Y)-NIGHTLY-Spica
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=SamdroidMod-2.0.1-Spica-alpha8.5
+        ro.modversion=SamdroidMod-3.0.1-Spica-alpha2
 endif
 
 # Time between scans in seconds. Keep it high to minimize battery drain.
@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
 #
 PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/spica/gralloc-libs/libs3c2drender.so:system/lib/libs3c2drender.so \
-    vendor/spica/prebuilt/spica/gralloc-libs/libsavscmn.so:system/lib/libsavscmn.so \
+    vendor/spica/prebuilt/spica/hw/copybit.GT-I5700.so:system/lib/hw/copybit.GT-I5700.so \
     vendor/spica/prebuilt/spica/gralloc-libs/hw/gralloc.GT-I5700.so:system/lib/hw/gralloc.GT-I5700.so
 
 #
@@ -102,7 +102,6 @@ PRODUCT_COPY_FILES += \
 # Sensors, Lights etc
 #
 PRODUCT_COPY_FILES += \
-    vendor/spica/prebuilt/spica/hw/copybit.GT-I5700.so:system/lib/hw/copybit.GT-I5700.so \
     vendor/spica/prebuilt/spica/hw/lights.GT-I5700.so:system/lib/hw/lights.GT-I5700.so
 
 #
