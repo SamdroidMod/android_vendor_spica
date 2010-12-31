@@ -40,6 +40,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160
 
+# Misc other modules
+PRODUCT_PACKAGES += \
+        gralloc.GT-I5700 \
+        copybit.GT-I5700
+
 PRODUCT_COPY_FILES += \
         device/common/gps/gps.conf_AS_SUPL:system/etc/gps.conf
 
@@ -75,20 +80,22 @@ PRODUCT_COPY_FILES += \
 #
 # Display (2D)
 #
-PRODUCT_COPY_FILES += \
-    vendor/spica/prebuilt/spica/gralloc-libs/libs3c2drender.so:system/lib/libs3c2drender.so \
-    vendor/spica/prebuilt/spica/hw/copybit.GT-I5700.so:system/lib/hw/copybit.GT-I5700.so \
-    vendor/spica/prebuilt/spica/gralloc-libs/hw/gralloc.GT-I5700.so:system/lib/hw/gralloc.GT-I5700.so
+#PRODUCT_COPY_FILES += \
+#    vendor/spica/prebuilt/spica/gralloc-libs/libs3c2drender.so:system/lib/libs3c2drender.so \
+#    vendor/spica/prebuilt/spica/hw/copybit.GT-I5700.so:system/lib/hw/copybit.GT-I5700.so \
+#    vendor/spica/prebuilt/spica/gralloc-libs/hw/gralloc.GT-I5700.so:system/lib/hw/gralloc.GT-I5700.so
 
 #
 # Display (3D)
 #
 PRODUCT_COPY_FILES += \
-    vendor/spica/prebuilt/spica/fimg-libs/egl.cfg:system/lib/egl/egl.cfg \
-    vendor/spica/prebuilt/spica/fimg-libs/libChunkAlloc.so:system/lib/egl/libChunkAlloc.so \
-    vendor/spica/prebuilt/spica/fimg-libs/libEGL_fimg.so:system/lib/egl/libEGL_fimg.so \
-    vendor/spica/prebuilt/spica/fimg-libs/libGLESv1_CM_fimg.so:system/lib/egl/libGLESv1_CM_fimg.so \
-    vendor/spica/prebuilt/spica/fimg-libs/libGLESv2_fimg.so:system/lib/egl/libGLESv2_fimg.so
+    vendor/spica/prebuilt/spica/fimg-libs/egl.cfg:system/lib/egl/egl.cfg
+
+#PRODUCT_COPY_FILES += \
+#    vendor/spica/prebuilt/spica/fimg-libs/libChunkAlloc.so:system/lib/egl/libChunkAlloc.so \
+#    vendor/spica/prebuilt/spica/fimg-libs/libEGL_fimg.so:system/lib/egl/libEGL_fimg.so \
+#    vendor/spica/prebuilt/spica/fimg-libs/libGLESv1_CM_fimg.so:system/lib/egl/libGLESv1_CM_fimg.so \
+#    vendor/spica/prebuilt/spica/fimg-libs/libGLESv2_fimg.so:system/lib/egl/libGLESv2_fimg.so
 
 #
 # Keys
