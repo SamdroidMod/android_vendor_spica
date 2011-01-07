@@ -13,7 +13,7 @@ KERNEL_MODULES_DIR:=/lib/modules
 #PRODUCT_PACKAGE_OVERLAYS += vendor/spica/overlay/common
 
 # Tiny toolbox
-TINY_TOOLBOX:=true
+#TINY_TOOLBOX:=true
 
 # Enable Windows Media if supported by the board
 WITH_WINDOWS_MEDIA:=true
