@@ -1,1 +1,7 @@
-SamdroidMod 3.0.1-alpha2
+SamdroidMod 3.0.1-alpha4
+    - IMEI fix (+ speed improvement) (forget /efs folder, thanks criminal!)
+    - fix for call waiting bug (criminal)
+    - bluetooth (thanks criminal)
+    - added AdwLauncher settings in Global Settings (from CM7)
+    - added cpu info and memory info to About Phone Settings page (from CM7)
+    - added Reboot option in power menu (from CM7)
