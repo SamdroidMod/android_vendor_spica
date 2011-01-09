@@ -48,6 +48,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Misc other modules
 PRODUCT_PACKAGES += \
+	libs3cjpeg.so \
+	akmd \
+	sensors.GT-I5700 \
         gralloc.GT-I5700 \
         copybit.GT-I5700
 
