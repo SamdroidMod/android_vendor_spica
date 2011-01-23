@@ -64,6 +64,7 @@ PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/spica/wifi/libwlservice.so:system/lib/libwlservice.so \
     vendor/spica/prebuilt/spica/wifi/nvram.txt:system/etc/nvram.txt \
     vendor/spica/prebuilt/spica/wifi/rtecdc.bin:system/etc/rtecdc.bin \
+    vendor/spica/prebuilt/spica/wifi/rtecdc_apsta.bin:system/etc/rtecdc_apsta.bin \
     vendor/spica/prebuilt/spica/wifi/nvram_mfg.txt:system/etc/nvram_mfg.txt \
     vendor/spica/prebuilt/spica/wifi/rtecdc_mfg.bin:system/etc/rtecdc_mfg.bin \
     vendor/spica/prebuilt/spica/wifi/bcm_supp.conf:system/etc/bcm_supp.conf \
