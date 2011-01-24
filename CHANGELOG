@@ -6,6 +6,8 @@ SamdroidMod 2.2.1
  - eclair style lock button (cujo)
  - GPS tweaks from sucka [http://tinyurl.com/4m8zse2]
  - froyo native WiFi tethering (criminal)
+ - add hardware render support for playback (vflashbirdv)
+ - fixed bluetooth
 
 
 SamdroidMod 2.0.1-alpha8
