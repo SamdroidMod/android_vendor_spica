@@ -1,0 +1,11 @@
+proper event values
+
+
+SYSTEM      HARDWARE
+ax          -ay
+ay           ax
+az          -az
+
+mx           mx
+my          -my
+mz          -mz

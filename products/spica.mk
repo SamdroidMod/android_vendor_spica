@@ -136,3 +136,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/spica/audio/asound.conf:system/etc/asound.conf
 
+#
+# akm daemon
+#
+PRODUCT_COPY_FILES += \
+    vendor/spica/prebuilt/spica/akmd/akmd:system/bin/akmd
