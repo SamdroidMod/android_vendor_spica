@@ -8,6 +8,7 @@ SamdroidMod 2.2.1
  - froyo native WiFi tethering (criminal)
  - add hardware render support for playback (vflashbirdv)
  - fixed bluetooth
+ - skia optimization from Rockie Chen
 
 
 SamdroidMod 2.0.1-alpha8
