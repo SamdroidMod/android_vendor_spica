@@ -1,5 +1,11 @@
-SamdroidMod 2.2.1-alpha9
+SamdroidMod 2.2.1
  - Android 2.2.2 r1
+ - new libaudio (ported from Nexus S GB source by vflashbirdv)
+ - libcamera.so from Intercept ROM
+ - new sensor lib (+akmd) (thanks cadavre) [http://bit.ly/fZn24F]
+ - eclair style lock button (cujo)
+
+
 
 SamdroidMod 2.0.1-alpha8
  - Ultimate Spica Recovery (thanks Xmister)

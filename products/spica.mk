@@ -23,10 +23,10 @@ PRODUCT_SPECIFIC_DEFINES += TARGET_PRELINKER_MAP=$(TOP)/vendor/spica/prelink-lin
 #
 ifdef SAMDROID_NIGHTLY
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=SamdroidMod-2-$(shell date +%m%d%Y)-NIGHTLY-Spica
+        ro.modversion=SamdroidMod-2.2.x-$(shell date +%m%d%Y)-NIGHTLY-Spica
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=SamdroidMod-2.0.1-Spica-alpha8.5
+        ro.modversion=SamdroidMod-2.2.1-a9_Spica
 endif
 
 # Time between scans in seconds. Keep it high to minimize battery drain.
@@ -41,7 +41,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=160
 
 PRODUCT_COPY_FILES += \
-        device/common/gps/gps.conf_AS_SUPL:system/etc/gps.conf
+    vendor/spica/prebuilt/spica/gps/gps.conf:system/etc/gps.conf \
+    vendor/spica/prebuilt/spica/gps/LBSModeApp.apk:system/app/LBSModeApp.apk
 
 # Install the features available on this device.
 PRODUCT_COPY_FILES += \
