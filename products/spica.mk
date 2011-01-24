@@ -75,6 +75,12 @@ PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/spica/wifi/wlservice:system/bin/wlservice
 
 #
+# Bluetooth
+#
+PRODUCT_COPY_FILES += \
+    vendor/spica/prebuilt/spica/bt/BCM4325D1_004.002.004.0153.0173.hcd:system/bin/BCM4325D1_004.002.004.0153.0173.hcd
+
+#
 # Display (2D)
 #
 PRODUCT_COPY_FILES += \
