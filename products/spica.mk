@@ -29,6 +29,9 @@ else
         ro.modversion=SamdroidMod-2.2.1-a9
 endif
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.enable-http=false
+
 # Time between scans in seconds. Keep it high to minimize battery drain.
 # This only affects the case in which there are remembered access points,
 # but none are in range.
