@@ -64,6 +64,12 @@ PRODUCT_COPY_FILES += \
     vendor/spica/prebuilt/spica/servicemodeapp/serviceModeApp.apk:system/app/serviceModeApp.apk
 
 #
+# STK
+#
+PRODUCT_COPY_FILES += \
+    vendor/spica/prebuilt/spica/app/Stk.apk:system/app/Stk.apk
+
+#
 # Wifi
 #
 PRODUCT_COPY_FILES += \
